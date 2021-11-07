@@ -1,4 +1,6 @@
  public class Flying extends Type{
-      String text="Flying";
+     Flying(){
+      this.text="Flying";
+     }
      //pass
  }

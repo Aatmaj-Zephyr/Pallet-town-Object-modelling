@@ -7,7 +7,9 @@ public abstract class Pokemon{
     Pokemon(){
         base=new Base(0,0,0,0);
         stats=new Stats(base);
+        init();
     }
+    protected abstract void init();//abstract method to replace constructor.
     protected Base base; //No one must change base
     public Stats stats;
     String name;

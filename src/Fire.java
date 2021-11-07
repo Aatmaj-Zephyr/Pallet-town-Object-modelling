@@ -1,4 +1,6 @@
 public class Fire extends Type{
-     String text="Fire";
+    Fire(){
+    this.text="Fire";
+    }
     //pass
 }

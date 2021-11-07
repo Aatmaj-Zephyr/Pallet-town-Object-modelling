@@ -1,15 +1,15 @@
 import java.util.ArrayList;
 public class Charmelon extends Pokemon {
     Charmelon(){
-        base=new Base(110,50,20,50);
-        stats=new Stats(base);
+        this.base=new Base(110,50,20,50);
+        this.stats=new Stats(base);
         //stats iterable todo
-    String name="Charmelon";
-    String text="Charmelon";
-    Type type1 = new Fire();
-    Type type2 =new Fire();
-    Pokemon PostEvolution = new Charmelon(this);
-    ArrayList<Move> My_Moves = new ArrayList<Move>(); // Create an ArrayList object 
+    this.name="Charmelon";
+   this.text="Charmelon";
+   this.type1 = new Fire();
+   this.type2 =new Fire();
+   this.PostEvolution = new Charmelon(this);
+   this.My_Moves = new ArrayList<Move>(); // Create an ArrayList object 
     }
     Charmelon(Pokemon PreEvolution){
         super(PreEvolution);

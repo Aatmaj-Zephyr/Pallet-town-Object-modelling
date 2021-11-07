@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 public class Charmelon extends Pokemon {
-    Charmelon(){
+    protected void init(){
         this.base=new Base(110,50,20,50);
         this.stats=new Stats(base);
         //stats iterable todo
@@ -12,7 +12,7 @@ public class Charmelon extends Pokemon {
    this.My_Moves = new ArrayList<Move>(); // Create an ArrayList object 
     }
     Charmelon(Pokemon PreEvolution){
-        super(PreEvolution);
+         super( PreEvolution);
         
     }
       public Pokemon evolve() throws NoFurtherConcreteEvolution{

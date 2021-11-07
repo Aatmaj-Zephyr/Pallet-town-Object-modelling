@@ -16,13 +16,10 @@ public abstract class Pokemon{
     int height;
     Type type1;//To be revisited later.
     Type type2;
-    Pokemon PostEvolution;
+    
     ArrayList<Move> My_Moves = new ArrayList<Move>(); // Create an ArrayList object
     
-    public Pokemon evolve() throws NoFurtherConcreteEvolution{
-        return PostEvolution;
-        
-    }
+    public abstract Pokemon evolve() throws NoFurtherConcreteEvolution;
     public Base give_base(){
         return base;
     }

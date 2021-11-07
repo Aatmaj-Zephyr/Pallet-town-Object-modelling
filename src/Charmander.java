@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 public class Charmander extends Pokemon {
-    Charmander(){
+    protected void init(){
         this.base=new Base(90,30,20,40);
         this.stats=new Stats(base);
         //stats iterable todo

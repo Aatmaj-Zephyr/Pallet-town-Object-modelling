@@ -8,12 +8,15 @@ public class Charmelon extends Pokemon {
    this.text="Charmelon";
    this.type1 = new Fire();
    this.type2 =new Fire();
-   this.PostEvolution = new Charmelon(this);
+
    this.My_Moves = new ArrayList<Move>(); // Create an ArrayList object 
     }
     Charmelon(Pokemon PreEvolution){
         super(PreEvolution);
         
+    }
+      public Pokemon evolve() throws NoFurtherConcreteEvolution{
+        return new Charizard(this);
     }
     
     

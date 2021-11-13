@@ -19,7 +19,9 @@ public class Charmelon extends Pokemon {
         return new Charizard(this);
     }
     
-    
+   protected void setmoves(){
+        this.My_Moves.add(new Flamethrower());
+    } 
     
 }
     

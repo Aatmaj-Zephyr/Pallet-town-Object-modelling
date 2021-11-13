@@ -10,12 +10,14 @@ public class Charmander extends Pokemon {
     this.type2 =new Fire();
     
     this.My_Moves = new ArrayList<Move>(); // Create an ArrayList object 
-   
+    
     }
     public Pokemon evolve() throws NoFurtherConcreteEvolution{
         return new Charmelon(this);
     }
     
-    
+    protected void setmoves(){
+        this.My_Moves.add(new Flamethrower());
+    }
     
 }

@@ -4,6 +4,6 @@ public abstract class Move{
     Type Move_type; //type of the Move_type
     int probability;//probability of the moveeffect
     int acccuracy;//accuracy of the move being hit.
-    void effect(Pokemon opponent);//effect of the move
+    abstract void effect(Pokemon opponent);//effect of the move
     int Damage;
 }

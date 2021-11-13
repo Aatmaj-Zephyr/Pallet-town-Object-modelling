@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 public class Charizard extends Pokemon {
     protected void init(){
-        this.base=new Base(110,50,20,50);
+        this.base=new Base(210,50,20,50);
         this.stats=new Stats(base);
         //stats iterable todo
     this.name="Charizard";
@@ -17,6 +17,8 @@ public class Charizard extends Pokemon {
         throw new NoFurtherConcreteEvolution();
     }
     
-    
+    protected void setmoves(){
+        this.My_Moves.add(new Flamethrower());
+    }
     
 }

@@ -7,6 +7,7 @@ public abstract class Pokemon{
     Pokemon(){
         base=new Base(0,0,0,0);
         stats=new Stats(base);
+        this.My_Status = new Blank();
         init();
     }
     protected abstract void init();//abstract method to replace constructor.
@@ -18,7 +19,7 @@ public abstract class Pokemon{
     int height;
     Type type1;//To be revisited later.
     Type type2;
-    
+    Status My_Status;
     ArrayList<Move> My_Moves = new ArrayList<Move>(); // Create an ArrayList object
     
     public abstract Pokemon evolve() throws NoFurtherConcreteEvolution;
@@ -30,5 +31,8 @@ public abstract class Pokemon{
     }
     public void set_name(String name){
         this.name=name;
+    }
+    public void checkup(){
+        this.My_Status.checkup(this);
     }
 }

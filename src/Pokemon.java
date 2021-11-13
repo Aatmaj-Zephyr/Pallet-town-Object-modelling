@@ -9,6 +9,7 @@ public abstract class Pokemon{
         stats=new Stats(base);
         this.My_Status = new Blank();
         init();
+        setmoves();
     }
     protected abstract void init();//abstract method to replace constructor.
     protected Base base; //No one must change base
@@ -35,4 +36,5 @@ public abstract class Pokemon{
     public void checkup(){
         this.My_Status.checkup(this);
     }
+    protected abstract void setmoves();
 }

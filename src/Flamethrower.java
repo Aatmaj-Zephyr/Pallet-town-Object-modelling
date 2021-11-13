@@ -7,7 +7,7 @@ public  class Flamethrower extends Move{
     this.Damage=80;
     }
     void effect(Pokemon opponent){//effect of the move
-    opponent.status= new Burn();
+    opponent.My_Status= new Burn();
         
     }
     

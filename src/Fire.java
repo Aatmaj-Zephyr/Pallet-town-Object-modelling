@@ -1,6 +1,6 @@
-public class Fire extends Type{
-    Fire(){
-    this.text="Fire";
-    }
-    //pass
+public class Fire extends Type {
+  Fire() {
+    this.text = "Fire";
+  }
+  // pass
 }

@@ -1,3 +1,3 @@
-    public abstract class Type{
-         String text;
-    }
+public abstract class Type {
+  String text;
+}
